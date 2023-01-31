@@ -1,5 +1,6 @@
 {
   "name": "sandbox",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,10 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/chrome": "^0.0.210",
     "chrome-remote-interface": "^0.32.0"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.210",
     "@types/chrome-remote-interface": "^0.31.9",
     "esbuild": "^0.17.5",
     "resolve-glob": "^1.0.0"

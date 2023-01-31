@@ -4,6 +4,7 @@ window.onload = () => {
 	) as HTMLButtonElement;
 	const targetDiv = document.getElementById("targets");
 	button.onclick = async () => {
+		console.log("clicked");
 		const response = await chrome.runtime.sendMessage({ type: "getTargets" });
 		console.log(response);
 
@@ -24,7 +25,7 @@ window.onload = () => {
 				}
 				break;
 			case "error":
-				targetDiv.textContent = response.data.toString();
+				targetDiv.textContent = JSON.stringify(response.data);
 				break;
 		}
 	};
